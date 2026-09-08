@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="문제를 구조화하고, 끝까지 구현하는 소프트웨어 엔지니어 이도현의 포트폴리오" />
+    <meta name="theme-color" content="#08111f" />
+    <title>이도현 — Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+KR:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="첫 화면으로 이동">
+        <span class="brand-mark">DH</span>
+        <span class="brand-name">LEE DOHYEON</span>
+      </a>
+      <nav class="desktop-nav" aria-label="주요 메뉴">
+        <a href="#work">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" aria-label="색상 테마 전환" title="색상 테마 전환">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+        <a class="contact-pill" href="#contact">Let’s talk <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy reveal">
+          <div class="status"><span class="status-dot"></span> 새로운 기회를 찾고 있습니다</div>
+          <p class="eyebrow">COMPUTER SCIENCE · SOFTWARE ENGINEERING</p>
+          <h1>복잡한 문제를<br /><span>명확한 코드</span>로<br />바꿉니다.</h1>
+          <p class="hero-description">
+            사용자 경험과 시스템의 안정성을 함께 고민하는 소프트웨어 엔지니어 이도현입니다.
+            작은 개선을 쌓아 실제로 쓰이는 제품을 만듭니다.
+          </p>
+          <div class="hero-cta">
+            <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">↓</span></a>
+            <a class="button ghost" href="mailto:hello@example.com">hello@example.com</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="개발자 프로필 요약">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="terminal-card">
+            <div class="terminal-top">
+              <div class="dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span>profile.ts</span>
+              <span class="terminal-badge">LIVE</span>
+            </div>
+            <pre><code><span class="code-muted">01</span>  <span class="code-key">const</span> developer = {
+<span class="code-muted">02</span>    name: <span class="code-string">"이도현"</span>,
+<span class="code-muted">03</span>    focus: [
+<span class="code-muted">04</span>      <span class="code-string">"Backend"</span>,
+<span class="code-muted">05</span>      <span class="code-string">"Web"</span>,
+<span class="code-muted">06</span>      <span class="code-string">"Problem Solving"</span>
+<span class="code-muted">07</span>    ],
+<span class="code-muted">08</span>    mindset: <span class="code-string">"ship & learn"</span>
+<span class="code-muted">09</span>  };</code></pre>
+            <div class="terminal-foot">
+              <span><i></i> Seoul, KR</span>
+              <span>UTC +09:00</span>
+            </div>
+          </div>
+          <div class="float-tag tag-one">BUILD</div>
+          <div class="float-tag tag-two">ITERATE</div>
+        </div>
+
+        <div class="hero-index" aria-hidden="true">01 / 04</div>
+      </section>
+
+      <section class="section projects" id="work">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2>문제를 해결한<br />과정과 결과</h2>
+          </div>
+          <p>기술을 나열하기보다, 어떤 문제를 발견했고 어떻게 개선했는지 보여주는 프로젝트입니다.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-art art-dashboard" aria-hidden="true">
+              <div class="art-top"><span></span><span></span><span></span></div>
+              <div class="art-shell">
+                <div class="art-sidebar"><i></i><i></i><i></i><i></i></div>
+                <div class="art-content">
+                  <div class="art-label"></div>
+                  <div class="art-stats"><b></b><b></b><b></b></div>
+                  <div class="art-chart"><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>01</span><span>WEB SERVICE · TEAM</span></div>
+              <h3>Campus Flow</h3>
+              <p>교내 스터디와 팀 프로젝트를 한곳에서 찾고 관리하는 협업 플랫폼. 검색 흐름과 알림 구조를 개선해 핵심 행동까지의 단계를 줄였습니다.</p>
+              <div class="metric-row">
+                <div><strong>42%</strong><span>탐색 시간 감소</span></div>
+                <div><strong>1.8s</strong><span>평균 응답 속도</span></div>
+              </div>
+              <div class="tech-list"><span>Spring Boot</span><span>React</span><span>MySQL</span><span>Docker</span></div>
+              <a class="case-link" href="#project-note">Case study <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art art-mobile" aria-hidden="true">
+              <div class="phone phone-back"><i></i><b></b><span></span></div>
+              <div class="phone phone-front"><i></i><b></b><span></span><span></span><em></em></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>02</span><span>MOBILE · PERSONAL</span></div>
+              <h3>Logly</h3>
+              <p>기록을 습관으로 만드는 마이크로 저널 앱. 오프라인 우선 저장으로 이동 중에도 끊김 없이 사용할 수 있습니다.</p>
+              <div class="tech-list"><span>Flutter</span><span>SQLite</span><span>Firebase</span></div>
+              <a class="case-link" href="#project-note">Case study <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-art art-system" aria-hidden="true">
+              <div class="system-node node-a">API</div>
+              <div class="system-node node-b">CACHE</div>
+              <div class="system-node node-c">DB</div>
+              <div class="system-line line-a"></div>
+              <div class="system-line line-b"></div>
+              <div class="pulse-dot pulse-a"></div>
+              <div class="pulse-dot pulse-b"></div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta"><span>03</span><span>BACKEND · TEAM</span></div>
+              <h3>Queue Lab</h3>
+              <p>트래픽 급증 상황을 재현하고 병목을 찾는 실험 프로젝트. 캐시와 비동기 큐 적용 전후를 수치로 비교했습니다.</p>
+              <div class="metric-row compact">
+                <div><strong>3.1×</strong><span>처리량 향상</span></div>
+              </div>
+              <div class="tech-list"><span>Node.js</span><span>Redis</span><span>Kafka</span></div>
+              <a class="case-link" href="#project-note">Case study <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="project-note" id="project-note">* 프로젝트명과 성과 수치는 예시입니다. 실제 경험에 맞게 교체해 주세요.</p>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">CAPABILITIES</p>
+            <h2>잘하는 것,<br />더 깊게 보는 것</h2>
+          </div>
+          <p>언어와 프레임워크 자체보다, 선택의 이유를 설명하고 운영 가능한 결과를 만드는 데 집중합니다.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card skill-wide reveal">
+            <div class="skill-number">01</div>
+            <div class="skill-content">
+              <h3>Backend Engineering</h3>
+              <p>확장 가능한 API와 예측 가능한 데이터 흐름을 설계합니다.</p>
+              <ul><li>REST API 설계</li><li>DB 모델링 · 쿼리 최적화</li><li>테스트 · 모니터링</li></ul>
+            </div>
+            <div class="skill-stack"><span>Java</span><span>Spring</span><span>Node.js</span><span>MySQL</span><span>Redis</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-number">02</div>
+            <div class="skill-content">
+              <h3>Frontend</h3>
+              <p>빠르고 접근 가능한 인터페이스를 구현합니다.</p>
+            </div>
+            <div class="skill-stack"><span>TypeScript</span><span>React</span><span>Next.js</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-number">03</div>
+            <div class="skill-content">
+              <h3>CS Fundamentals</h3>
+              <p>원리를 이해하고 상황에 맞는 해법을 선택합니다.</p>
+            </div>
+            <div class="skill-stack"><span>Algorithm</span><span>Network</span><span>OS</span><span>Database</span></div>
+          </article>
+          <article class="skill-card skill-accent reveal">
+            <div class="skill-number">04</div>
+            <div class="skill-content">
+              <h3>Team & Delivery</h3>
+              <p>작게 나누고, 빠르게 검증하고, 명확하게 공유합니다.</p>
+            </div>
+            <div class="delivery-track" aria-hidden="true"><span>IDEA</span><i></i><span>BUILD</span><i></i><span>SHIP</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="about-intro reveal">
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>좋은 코드는<br /><span>좋은 질문</span>에서<br />시작된다고 믿습니다.</h2>
+        </div>
+        <div class="about-detail reveal">
+          <p class="lead">기능을 만드는 데서 멈추지 않고, 왜 필요한지와 운영될 때 어떤 문제가 생길지까지 생각합니다.</p>
+          <p>낯선 기술도 작은 실험으로 빠르게 이해하고, 배운 내용을 문서와 코드로 남깁니다. 팀에서는 복잡한 상황을 정리하고 다음 행동을 명확하게 만드는 역할을 자주 맡습니다.</p>
+          <div class="timeline">
+            <div class="timeline-item">
+              <span class="timeline-year">2023 — NOW</span>
+              <div><strong>OO대학교 컴퓨터공학과</strong><p>전공 GPA 4.1 / 4.5 · 자료구조, 운영체제, 데이터베이스</p></div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2025</span>
+              <div><strong>교내 개발 동아리 DEPTH</strong><p>백엔드 파트 · 프로젝트 리드 · 신입 세션 운영</p></div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-year">2024</span>
+              <div><strong>소프트웨어 경진대회 우수상</strong><p>Campus Flow 서비스 기획 및 서버 개발</p></div>
+            </div>
+          </div>
+          <p class="project-note">* 학교·학력·활동 정보는 예시입니다.</p>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="contact-inner reveal">
+          <p class="eyebrow">LET’S BUILD SOMETHING USEFUL</p>
+          <h2>함께 풀고 싶은 문제가<br />있다면 이야기해 주세요.</h2>
+          <a class="contact-email" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-links">
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+            <a href="#top">Back to top ↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 LEE DOHYEON</span>
+      <span>DESIGNED WITH INTENT · BUILT WITH CARE</span>
+    </footer>
+  </body>
+</html>
