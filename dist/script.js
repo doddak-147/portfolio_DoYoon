@@ -1,34 +1,26 @@
-const body = document.body;
-const header = document.querySelector(".site-header");
-const themeToggle = document.querySelector(".theme-toggle");
-const savedTheme = localStorage.getItem("portfolio-theme");
+const themeToggle = document.querySelector('.theme-toggle');
+const themeColor = document.querySelector('meta[name="theme-color"]');
+const themeKey = 'portfolio-theme-v2';
 
-if (savedTheme === "light") body.classList.add("light");
+const applyTheme = (dark) => {
+  document.body.classList.toggle('dark', dark);
+  themeToggle?.setAttribute('aria-pressed', String(dark));
+  themeToggle?.setAttribute('aria-label', dark ? '밝은 화면으로 전환' : '어두운 화면으로 전환');
+  themeColor?.setAttribute('content', dark ? '#161b25' : '#ffffff');
+};
 
-themeToggle?.addEventListener("click", () => {
-  body.classList.toggle("light");
-  localStorage.setItem("portfolio-theme", body.classList.contains("light") ? "light" : "dark");
-});
-
-const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 18);
-updateHeader();
-window.addEventListener("scroll", updateHeader, { passive: true });
-
-const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-if (reduceMotion || !("IntersectionObserver" in window)) {
-  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("visible"));
-} else {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    { threshold: 0.12 }
-  );
-  document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+try {
+  applyTheme(localStorage.getItem(themeKey) === 'dark');
+} catch {
+  applyTheme(false);
 }
+
+themeToggle?.addEventListener('click', () => {
+  const dark = !document.body.classList.contains('dark');
+  applyTheme(dark);
+  try {
+    localStorage.setItem(themeKey, dark ? 'dark' : 'light');
+  } catch {
+    // Theme switching still works when browser storage is unavailable.
+  }
+});
