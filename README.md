@@ -3,7 +3,7 @@
 이도윤(Lee Do Yoon)의 컴퓨터공학 포트폴리오 웹사이트입니다.
 
 - 계명대학교 컴퓨터공학과 재학 · GPA 3.75 / 4.5
-- 공개 프로젝트: Contest, HomeFit
+- 공개 프로젝트: 리스크 렌즈(Risk Lens / service_contest), Contest, HomeFit
 - 비공개 프로젝트: DBP, InnoByte
 - 밝은 기본 화면, 한국어 메뉴와 프로젝트 중심 구성
 - 모바일 반응형 화면과 다크·라이트 테마 지원

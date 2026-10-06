@@ -10,6 +10,8 @@
   --blue-surface: #edf2ff;
   --green-surface: #edf7f2;
   --green-ink: #22694f;
+  --orange-surface: #fff1e8;
+  --orange-ink: #9e411b;
   --soft: #f7f8fb;
   --chip: #eef0f5;
 }
@@ -25,6 +27,8 @@ body.dark {
   --blue-surface: #222e46;
   --green-surface: #203831;
   --green-ink: #9cddbe;
+  --orange-surface: #392a23;
+  --orange-ink: #ffc19a;
   --soft: #1c2330;
   --chip: #2b3445;
 }
@@ -91,6 +95,8 @@ h2 { margin: 0; font-size: clamp(27px, 3vw, 34px); line-height: 1.5; letter-spac
 .project-facts span { display: block; font-size: 12px; color: var(--muted); margin-top: 2px; }
 .project-homefit .project-summary { background: var(--green-surface); }
 .project-homefit .project-kicker, .project-homefit .title-dot, .project-homefit .project-facts strong { color: var(--green-ink); }
+.project-risklens .project-summary { background: var(--orange-surface); }
+.project-risklens .project-kicker, .project-risklens .title-dot, .project-risklens .project-facts strong { color: var(--orange-ink); }
 .project-detail { min-width: 0; padding: 34px 38px; display: flex; flex-direction: column; }
 .project-description { margin: 0; font-size: 16px; letter-spacing: -.02em; }
 .feature-list { margin: 24px 0; padding-left: 19px; color: var(--muted); font-size: 14px; }
