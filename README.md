@@ -23,3 +23,11 @@ npm run build
 ```
 
 빌드 결과는 `dist` 폴더에 생성됩니다.
+
+## GitHub Pages 배포
+
+포트폴리오 주소: [doddak-147.github.io/portfolio_DoYoon](https://doddak-147.github.io/portfolio_DoYoon/)
+
+저장소의 **Settings → Pages**에서 `Deploy from a branch`, `main`, `/ (root)`를 사용합니다.
+`main` 브랜치에 변경 내용을 올리면 GitHub Pages가 자동으로 업데이트합니다.
+루트의 `.nojekyll` 파일로 Jekyll 처리 없이 HTML·CSS·JavaScript 파일을 그대로 게시합니다.
